@@ -1,13 +1,1 @@
-async function handleResize() {
-  setTimeout(() => {
-    const imgBoxArr = document.querySelectorAll(".list-offers__info-wrapper");
-    const imgArr = document.querySelectorAll(".list-offers__info-bg");
-    let i = 0;
-    imgBoxArr.forEach((imgBox) => {
-      imgArr[i].style.height = `${imgBox.clientHeight}px`;
-      i++;
-    });
-  }, 501);
-}
-handleResize();
-window.addEventListener("resize", handleResize);
+async function handleResize(){setTimeout(()=>{const e=document.querySelectorAll(".list-offers__info-wrapper"),t=document.querySelectorAll(".list-offers__info-bg");let i=0;e.forEach(e=>{t[i].style.height=`${e.clientHeight}px`,i++})},501)}handleResize(),window.addEventListener("resize",handleResize);
